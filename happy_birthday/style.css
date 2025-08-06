@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ffd3a5, #fd6585);
+  text-align: center;
+  min-height: 100vh;   /* ✅ đủ chiều cao để cuộn nếu nội dung dài */
+  overflow-y: auto;    /* ✅ cho phép cuộn theo chiều dọc */
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1px;    
+  margin-bottom: 20px;
+  color: #c16a96;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #ff5e78;
+  margin: 0;
+}
+
+.dob {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.wish {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.wish.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+#birthday-img {
+  max-width: 300px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.button {
+  background-color: #ff4081;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #e91e63;
+}
+
+#age {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 10px;
+}
+

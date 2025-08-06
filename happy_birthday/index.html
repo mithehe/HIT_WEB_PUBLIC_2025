@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chúc mừng sinh nhật!</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .fireworks {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .wish-text {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px #00000055;
+    }
+
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎉 Chúc mừng sinh nhật! 🎂</h1>
+  <h2>Maria Trần Thị Lan</h2>
+  <p class="dob">7/8/2006 - 7/8/2025</p>
+  <img id="birthday-img" src="../happy_birthday/Lan.jpg" alt="Birthday Cake">
+
+  <div id="age">Tuổi: <span id="current-age">18</span> → <span id="new-age">19</span></div>
+  <button class="button" onclick="showMessage()">Nhận lời chúc 🎁</button>
+
+  <div id="wish" class="wish">
+    <p class="wish-text"> Ỏ oi, Lan đã 19 tuổi rồi cơ á. Eo ôi nhanh quá, hôm qua còn than mãi không qua 18 mà 🤡. Tuổi
+      19 là cận trưởng thành rùi đấy nhá, mạnh mẽ suy nghĩ kĩ hơn khi làm mọi việc nhé. Tuổi mới sứ mạng mới nhưng đừng
+      quên mình vẫn là con của Chúa, vẫn nhiệt thành phụng sự Chúa phụng sự anh em mỗi ngày khi có thể nhé. Cố gắng làm
+      chị trưởng gương mẫu cho tôi. Cuối cùng, chúc Lan có nhiều niềm vui, sức khoẻ, luôn rạng rỡ như ánh mặt trời☀️,
+      mạnh mẽ như gió biển Đông🌪️, và ngọt ngào như bánh kem sinh nhật hôm nay🎂. Mong rằng mọi điều tốt lành sẽ đến
+      với Lan và nguyện xin ơn Chúa và mẹ Maria luôn đồng hành cùng cô gái nhỏ✨💖 🎈🎉
+    </p>
+  </div>
+  <canvas id="fireworks" class="fireworks"></canvas>
+
+  <!-- Nhạc YouTube -->
+  <div id="yt-player">
+    <iframe id="yt-iframe" src="https://www.youtube.com/embed/5u4xTa3LR2U?enablejsapi=1&autoplay=1" frameborder="0"
+      allow="autoplay">
+    </iframe>
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.9.4/dist/fireworks.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+p{
+    color: rgb(149, 189, 63);
+    font-size: 24px;
+    
+}
+
+.content{
+    background-image: url(../TrenLop/hana.jpg);
+    background-size: cover;
+    background-color: #D08087;
+}
+
